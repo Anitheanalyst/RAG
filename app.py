@@ -1,3 +1,8 @@
+import os
+from ingest import ingest
+
+if not os.path.exists("db"):
+    ingest()
 import streamlit as st
 from rag_pipeline import rag_answer
 
